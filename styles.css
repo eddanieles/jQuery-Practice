@@ -5,12 +5,17 @@
 #accordion {
   list-style-type: none;
   padding-left: 0;
-  margin: 0px 0px; }
+  margin: 0px 0px;
+  font-weight: 700; }
 
 .heading {
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: #5D5F64; }
+  background-color: #5D5F64;
+  color: white; }
+  .heading:hover {
+    background-color: #7CA129;
+    color: #5D5F64; }
 
 .fa {
   width: 10%;
@@ -27,7 +32,8 @@
 .submenu {
   list-style-type: decimal-leading-zero;
   padding-left: 25px;
-  background-color: #E5E5E5; }
+  background-color: #E5E5E5;
+  color: #5D5F64; }
   .submenu li {
     padding-top: 15px;
     padding-bottom: 15px;
