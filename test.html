@@ -2,12 +2,77 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>jQuery Practice</title>
-    <link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8">
+    <title>Test</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <style media="screen">
+    /*
+      body {
+        background: white;
+      }
+
+      #accordion p {
+        border: 3px solid black;
+        padding: 5px;
+      }
+
+      #accordion p:nth-child(odd) {
+        background: #aaaaaa;
+        margin: 0px 10px;
+      }
+
+      #accordion p:nth-child(even) {
+        background: gray;
+        margin: 0px 20px 0px 40px;
+        box-shadow: 3px 3px 3px black inset;
+        min-height: 35px;
+      }
+      */
+      #container {
+        width: 30%;
+        border: 1px solid black;
+      }
+
+      .fa {
+        width: 10%;
+      }
+
+      .name {
+
+      }
+
+      .amount {
+        float: right;
+        margin-right: 15px;
+      }
+
+      .accordion {
+        list-style-type: none;
+      }
+
+      .submenu {
+        list-style-type: decimal-leading-zero;
+        padding-left: 25px;
+      }
+    </style>
   </head>
   <body>
-    
+<!--
+    <div id="accordion1">
+      <p>John Smith</p>
+      <p>Some bio info</p>
+
+      <p>Rory Pond</p>
+      <p>Some more bio info</p>
+
+      <p>Sara Jane Smith</p>
+      <p>Reporter</p>
+
+      <p>Martha</p>
+      <p>Nurse</p>
+
+    </div>
+-->
+
     <div id="container">
       <ul id="accordion" class="accordion">
         <li> <!-- start of row -->
@@ -103,8 +168,22 @@
       </ul> <!-- end of entire list -->
 
     </div>
-
   </body>
   <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
-  <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript">
+/*
+    $("#accordion p:nth-child(even)").hide();
+
+    $("#accordion p:nth-child(odd)").click(function(){
+      $("#accordion p:nth-child(even)").hide();
+      $(this).next().show();
+    });
+  */
+    $(".submenu").slideUp();
+    $(".heading").click(function(){
+      $(".submenu").hide();
+      $(this).next(".submenu").slideToggle();
+    })
+
+  </script>
 </html>
