@@ -12,7 +12,8 @@
   padding-top: 15px;
   padding-bottom: 15px;
   background-color: #5D5F64;
-  color: white; }
+  color: white;
+  border-bottom: 1px solid #76787e; }
   .heading:hover {
     background-color: #7CA129;
     color: #5D5F64; }

@@ -10,11 +10,13 @@
   font-weight: 700;
 }
 
+
 .heading {
   padding-top: 15px;
   padding-bottom: 15px;
   background-color: #5D5F64;
   color: white;
+  border-bottom: 1px solid lighten(#5D5F64, 10%);
   &:hover {
     background-color: #7CA129;
     color: #5D5F64;
